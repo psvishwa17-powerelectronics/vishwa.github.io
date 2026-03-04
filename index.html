@@ -1,186 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Vishwa | Power Electronics Engineer</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishwa | Power Electronics Engineer</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-        }
+body{
+    background:#0f172a;
+    color:white;
+}
 
-        header img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            border: 4px solid #38bdf8;
-            margin-bottom: 20px;
-        }
+/* Navigation */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#020617;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
 
-        header h1 {
-            margin: 10px 0;
-            font-size: 32px;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:15px;
+}
 
-        header p {
-            color: #94a3b8;
-        }
+nav a:hover{
+    color:#38bdf8;
+}
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+/* Hero */
+#home{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:linear-gradient(to right,#0f172a,#1e293b);
+}
 
-        h2 {
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+#home h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            transition: 0.3s;
-        }
+#home span{
+    color:#38bdf8;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-        }
+#home p{
+    font-size:20px;
+    color:#94a3b8;
+}
 
-        details {
-            background: #1e293b;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            cursor: pointer;
-        }
+/* Sections */
+section{
+    padding:100px 10%;
+}
 
-        summary {
-            font-size: 18px;
-            font-weight: bold;
-            color: #38bdf8;
-        }
+h2{
+    font-size:32px;
+    margin-bottom:30px;
+    border-left:5px solid #38bdf8;
+    padding-left:10px;
+}
 
-        ul {
-            line-height: 1.8;
-        }
+/* About */
+.about-container{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:40px;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #38bdf8;
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 6px;
-            margin-top: 10px;
-        }
+.about-container img{
+    width:250px;
+    border-radius:15px;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-            color: #94a3b8;
-        }
-    </style>
+.about-text{
+    flex:1;
+    color:#cbd5e1;
+}
+
+/* Skills */
+.skills ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.skills li{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+}
+
+/* Projects */
+details{
+    background:#1e293b;
+    padding:20px;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+summary{
+    font-size:18px;
+    font-weight:bold;
+    color:#38bdf8;
+    cursor:pointer;
+}
+
+/* Contact */
+.contact p{
+    margin-bottom:10px;
+    color:#cbd5e1;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    color:#94a3b8;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <img src="profile.png" alt="Vishwa Profile Photo">
-    <h1>Vishwa</h1>
-    <p>Power Electronics Hardware Engineer</p>
-    <p>EV Charging | OBC | 45kW DC Fast Charger | Traction Inverter</p>
-</header>
+<nav>
+    <div><strong>Vishwa</strong></div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-<section>
+<section id="home">
+    <h1>Hello, I'm <span>Vishwa</span></h1>
+    <p>Automotive Power Electronics Engineer | EV Systems Specialist</p>
+</section>
+
+<section id="about">
     <h2>About Me</h2>
-    <div class="card">
-        Experienced Power Electronics Engineer with 4+ years in EV systems.
-        Strong expertise in PFC design, Three-Phase DAB topology,
-        EMI/EMC validation, and ISO 21498-2 & LV123 testing.
+    <div class="about-container">
+        <img src="profile.png" alt="Vishwa">
+        <div class="about-text">
+            Electrical & Electronics Engineer with 4+ years of experience in 
+            45kW EV DC Fast Chargers (900V), Automotive ECUs, and 
+            Traction Inverter validation.
+            <br><br>
+            Experienced in AFE, DAB converters, ISO 16750, ISO 7637, 
+            CISPR 25, ISO 21498, LV123 validation and NABL accreditation (ISO/IEC 17025).
+        </div>
     </div>
 </section>
 
-<section>
+<section id="skills" class="skills">
     <h2>Technical Skills</h2>
-    <div class="card">
-        <ul>
-            <li>PFC & DAB Converter Design</li>
-            <li>45kW DC Fast Charger Validation</li>
-            <li>6.6kW On Board Charger Testing</li>
-            <li>Traction Inverter Reliability Testing</li>
-            <li>EMI/EMC Compliance</li>
-            <li>LCR Meter, Oscilloscope, Power Analyzer</li>
-        </ul>
-    </div>
+    <ul>
+        <li>Three-Phase Active Front End (AFE)</li>
+        <li>Dual Active Bridge (DAB)</li>
+        <li>900V High Voltage Testing</li>
+        <li>ISO 16750 / ISO 7637</li>
+        <li>CISPR 25 / EMI EMC</li>
+        <li>Vector CANalyzer</li>
+        <li>Oscilloscope & Power Analyzer</li>
+        <li>MATLAB / Altium / LTSpice</li>
+    </ul>
 </section>
 
-<section>
-    <h2>Projects (Click to Expand)</h2>
+<section id="projects">
+    <h2>Projects</h2>
 
     <details>
-        <summary>⚡ 45kW DC Fast Charger</summary>
+        <summary>⚡ 45kW EV DC Fast Charger</summary>
         <p>
-            • Worked on Three-Phase PFC stage<br>
-            • Designed and validated DAB topology<br>
-            • Efficiency & thermal performance testing<br>
-            • Compliance testing as per automotive standards
+            • Hardware testing up to 900V / 100A<br>
+            • AFE (AC-DC) & DAB (DC-DC) validation<br>
+            • Designed sensing & protection circuits<br>
+            • EMI/EMC compliance at international lab
         </p>
     </details>
 
     <details>
-        <summary>🔋 6.6kW On Board Charger</summary>
+        <summary>🚗 Automotive ECU Validation</summary>
         <p>
-            • Circuit validation & debugging<br>
-            • Efficiency optimization<br>
-            • ISO 21498-2 & LV123 validation support<br>
-            • EMI/EMC compliance testing
+            • B0 & C0 validation testing<br>
+            • ISO 16750, ISO 7637, ISO 11452<br>
+            • ECU reflashing & diagnostics using Vector CANalyzer<br>
+            • Developed Load Emulator hardware
         </p>
     </details>
 
     <details>
-        <summary>🚗 Traction Inverter</summary>
+        <summary>🔋 EV Traction Inverter</summary>
         <p>
-            • Electrical & thermal validation<br>
-            • Reliability and stress testing<br>
-            • Performance benchmarking<br>
-            • Hardware debugging
+            • Redundant power supply design<br>
+            • OEM-specific validation (Indian & Japanese)<br>
+            • Test plan & harness development
         </p>
     </details>
 
 </section>
 
-<section>
-    <h2>Resume</h2>
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
-</section>
-
-<section>
+<section id="contact" class="contact">
     <h2>Contact</h2>
-    <div class="card">
-        Email: yourmail@gmail.com <br>
-        LinkedIn: https://linkedin.com/in/yourprofile <br>
-        Location: Bangalore, India
-    </div>
+    <p>Email: vishwa.ps@outlook.com</p>
+    <p>Location: Bangalore, India</p>
+    <p>GitHub: https://github.com/psvishwa17-powerelectronics</p>
 </section>
 
 <footer>
-    © 2026 Vishwa | Power Electronics Engineer
+    © 2026 Vishwa | Automotive Power Electronics Engineer
 </footer>
 
 </body>
