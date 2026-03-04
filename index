@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vishwa | Power Electronics Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 32px;
+        }
+
+        header p {
+            color: #94a3b8;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+        }
+
+        details {
+            background: #1e293b;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        summary {
+            font-size: 18px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="profile.jpg" alt="Vishwa Profile Photo">
+    <h1>Vishwa</h1>
+    <p>Power Electronics Hardware Engineer</p>
+    <p>EV Charging | OBC | 45kW DC Fast Charger | Traction Inverter</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        Experienced Power Electronics Engineer with 4+ years in EV systems.
+        Strong expertise in PFC design, Three-Phase DAB topology,
+        EMI/EMC validation, and ISO 21498-2 & LV123 testing.
+    </div>
+</section>
+
+<section>
+    <h2>Technical Skills</h2>
+    <div class="card">
+        <ul>
+            <li>PFC & DAB Converter Design</li>
+            <li>45kW DC Fast Charger Validation</li>
+            <li>6.6kW On Board Charger Testing</li>
+            <li>Traction Inverter Reliability Testing</li>
+            <li>EMI/EMC Compliance</li>
+            <li>LCR Meter, Oscilloscope, Power Analyzer</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Projects (Click to Expand)</h2>
+
+    <details>
+        <summary>⚡ 45kW DC Fast Charger</summary>
+        <p>
+            • Worked on Three-Phase PFC stage<br>
+            • Designed and validated DAB topology<br>
+            • Efficiency & thermal performance testing<br>
+            • Compliance testing as per automotive standards
+        </p>
+    </details>
+
+    <details>
+        <summary>🔋 6.6kW On Board Charger</summary>
+        <p>
+            • Circuit validation & debugging<br>
+            • Efficiency optimization<br>
+            • ISO 21498-2 & LV123 validation support<br>
+            • EMI/EMC compliance testing
+        </p>
+    </details>
+
+    <details>
+        <summary>🚗 Traction Inverter</summary>
+        <p>
+            • Electrical & thermal validation<br>
+            • Reliability and stress testing<br>
+            • Performance benchmarking<br>
+            • Hardware debugging
+        </p>
+    </details>
+
+</section>
+
+<section>
+    <h2>Resume</h2>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <div class="card">
+        Email: yourmail@gmail.com <br>
+        LinkedIn: https://linkedin.com/in/yourprofile <br>
+        Location: Bangalore, India
+    </div>
+</section>
+
+<footer>
+    © 2026 Vishwa | Power Electronics Engineer
+</footer>
+
+</body>
+</html>
